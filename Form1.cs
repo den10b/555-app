@@ -85,7 +85,7 @@ namespace _555_app
 
 
             */
-            var numbers = newList.Select(v => numberTable[v]);
+            var numbers = newList.Select(v => numberTable[v.ToLowerInvariant()]);
 
             long acc = 0, total = 0L;
             bool wsHund = false, wsTen = false, wsTeen = false, wsOne = false;
